@@ -1,0 +1,111 @@
+/* CSS stylesheet for Pizza Friday Survey freecodecamp project */
+
+body {
+  text-align: center;
+  font-family: sans-serif;
+  background-image: linear-gradient(to bottom, #beaf99, #725e41, #224c4c);
+  color: white;
+}
+
+#body {
+  width: 600px;
+  padding: 10px;
+  margin: auto;
+  border-radius: 20px;
+  text-align: left;
+  background-color: #5a8c8c;
+  font-size: 20px;
+  color: white;
+}
+
+#title {
+  font-size: 45px;
+}
+
+#description {
+  font-size: 20px;
+  font-style: italic;
+  padding-top: 1px;
+}
+
+#name {
+  width: 500px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#email {
+  width: 500px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#number {
+  width: 500px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#dropdown {
+  width: 500px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#comment {
+  width: 500px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+#submit {
+  width: 500px;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 3%;
+  color: white;
+  background-color: #7f4d4d;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #b8909b;
+}
+
+#status {
+  width: 500px;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+#status.success {
+  background-color: #4d7f61;
+  animation: status 4s ease forwards;
+}
+
+#status.error {
+  background-color: rgb(250, 129, 92);
+  color: white;
+  animation: status 4s ease forwards;
+}
+
+@keyframes status {
+  0% {
+     opacity: 1;
+     pointer-events: all;
+  }
+  90% {
+     opacity: 1;
+     pointer-events: all;
+  }
+  100% {
+     opacity: 0;
+     pointer-events: none;
+  }
+}

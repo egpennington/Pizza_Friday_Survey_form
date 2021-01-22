@@ -1,0 +1,110 @@
+<!-- pizza survey form for freecodecamp project -->
+
+<DOCTYPE html>
+<html lang = "en" dir = "ltr">
+<head>
+  <meta charset ="utf-8">
+  <title>Pizza Friday Survey Form</title>
+  <link rel="stylesheet" href="style.css"></link>
+  <script src="app.js" charset = "utf-8"></script>
+</head>
+
+<body>
+  <div id ="image">
+    <img src="pizza.png" alt="Picture of whole pizza">
+  </div>
+
+  <h1 id="title">Pizza Friday Survey Form</h1>
+
+  <p id="description">Thank you for taking the time to help improve your pizza experience. </p>
+
+
+
+  <div id="body">
+
+  <form id="survey-form" action="https://formspree.io/f/xknpyzll" method="post" id="my-form"> 
+
+    <label for="name"><p>Name:</p></label>
+    <input id="name" type="text" name="name" placeholder="Enter your name" required>
+
+    <label for="email"><p>Email:</p></label>
+    <input id="email" type="email" name="email" placeholder="Enter your email" required>
+
+    <label for="number"><p>Age:</p></label>
+    <input id="number" type="number" name="age" placeholder="Enter your age" min="12" max="65" required>
+
+    <label for="item"><p>Which item do you prefer?</p></label> 
+    
+    <select id="dropdown" name="item">
+      <option value="default">Nothing</option>
+      <option value="pizza">Pizza</option>
+      <option value="calzone">Calzone</option>      
+      <option value="stromboli">Stromboli</option>
+      <option value="pasta">Pasta</option>
+      <option value="wings">Wings</option>
+      <option value="salad">Salad</option>
+      <option value="subs">Subs</option>
+    </select>
+
+    <p>Which pizza place do you like the most?</p>
+    
+    <input type="radio" name="place" value="Marscotti">Marscotti's</input>
+    <br>
+    <input type="radio" name="place" value="Pizza OVen">Pizza Oven</input>
+    <br>
+    <input type="radio" name="place" value="3">East of Chicago</input>
+    <br>
+    <input type="radio" name="place" value="Gionino">Gionino's</input>
+    <br>
+    <input type="radio" name="place" value="Pizza Hut">Pizza Hut</input>
+    <br>
+    <input type="radio" name="place" value="Domino's">Domino's</input>
+    <br>
+    <input type="radio" name="place" value="Kosmo's">Kosmo's</input>
+    <br>
+    <input type="radio" name="place" value="DeMario's">DeMario's Pizza</input>
+    <br>
+    <input type="radio" name="place" value="Italo's">Italo's</input>
+
+  
+    <p>Which topping do you like on your pizza? <em>(check all that apply)</em></p>
+    
+    <input type="checkbox" name="toppings" value="Pepperoni">Pepperoni</input>
+    <br>
+    <input type="checkbox" name="toppings" value="Sausage">Sausage</input>
+    <br>
+    <input type="checkbox" name="toppings" value="Chicken">Chicken</input>
+    <br>
+    <input type="checkbox" name="toppings" value="Ham">Ham</input>
+    <br>
+    <input type="checkbox" name="toppings" value="Bacon">Bacon</input>
+    <br>
+    <input type="checkbox" name="toppings" value="Black Olives">Black Olives</input>
+    <br> 
+    <input type="checkbox" name="toppings" value="Mushrooms">Mushrooms</input>
+    <br>
+    <input type="checkbox" name="toppings" value="Onions">Onions</input>
+    <br>
+    <input type="checkbox" name="toppings" value="Banana Peppers">Banana Peppers</input>
+    <br>
+    <input type="checkbox" name="toppings" value="Pineapple">Pineapple</input>
+    <br>
+    <br>
+
+    <label for="comment">Comments</label>
+    <textarea id="comment" name="comment" rows="4" cols="40" placeholder="Add comments/Suggestions here"></textarea>
+    <br>
+    <br>
+  
+    <button type="submit" id="submit">Submit</button>
+
+
+  </form>
+ 
+  </div>
+
+  <div id="status"></div>
+
+
+</body>
+</html>

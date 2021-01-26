@@ -1,5 +1,7 @@
 /* javascript for Pizza Friday Survey form
-   code from Formspree website */
+   code from Formspree website.  This js code downloaded from website.
+   coded to stay on page and not go to the website after submitting.
+   There is a bug that need fixed.
 
   window.addEventListener("DOMContentLoaded", function() {
 
@@ -46,4 +48,4 @@
       }
     };
     xhr.send(data);
-  }
+  }  */

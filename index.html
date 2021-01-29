@@ -5,35 +5,26 @@
 <head>
   <meta charset ="utf-8">
   <title>Pizza Friday Survey Form</title>
+  <meta name="HandheldFriendly" content="True">
+  <meta name= "MobileOptimized" content="320"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
   <link rel="stylesheet" href="style.css"></link>
 </head>
-
 <body>
   <div id ="image">
     <img src="pizza.png" alt="Picture of whole pizza">
   </div>
-
   <h1 id="title">Pizza Friday Survey Form</h1>
-
   <p id="description">Thank you for taking the time to help improve your pizza experience. </p>
-
-
-
   <div id="body">
-
   <form id="survey-form" action="https://formspree.io/f/xknpyzll" method="post" id="my-form"> 
-
     <label for="name"><p>Name:</p></label>
     <input id="name" type="text" name="name" placeholder="Enter your name" required>
-
     <label for="email"><p>Email:</p></label>
     <input id="email" type="email" name="email" placeholder="Enter your email" required>
-
     <label for="number"><p>Age:</p></label>
     <input id="number" type="number" name="age" placeholder="Enter your age" min="12" max="65" required>
-
     <label for="item"><p>Which item do you prefer?</p></label> 
-    
     <select id="dropdown" name="item">
       <option value="default">Nothing</option>
       <option value="pizza">Pizza</option>
@@ -44,9 +35,7 @@
       <option value="salad">Salad</option>
       <option value="subs">Subs</option>
     </select>
-
     <p>Which pizza place do you like the most?</p>
-    
     <input type="radio" name="place" value="Marscotti">Marscotti's</input>
     <br>
     <input type="radio" name="place" value="Pizza OVen">Pizza Oven</input>
@@ -64,10 +53,7 @@
     <input type="radio" name="place" value="DeMario's">DeMario's Pizza</input>
     <br>
     <input type="radio" name="place" value="Italo's">Italo's</input>
-
-  
     <p>Which topping do you like on your pizza? <em>(check all that apply)</em></p>
-    
     <input type="checkbox" name="toppings" value="Pepperoni">Pepperoni</input>
     <br>
     <input type="checkbox" name="toppings" value="Sausage">Sausage</input>
@@ -87,24 +73,14 @@
     <input type="checkbox" name="toppings" value="Banana Peppers">Banana Peppers</input>
     <br>
     <input type="checkbox" name="toppings" value="Pineapple">Pineapple</input>
-    <br>
-    <br>
-
+    <br><br>
     <label for="comment">Comments</label>
     <textarea id="comment" name="comment" rows="4" cols="40" placeholder="Add comments/Suggestions here"></textarea>
-    <br>
-    <br>
-  
+    <br><br>
     <button type="submit" id="submit">Submit</button>
-
-
   </form>
- 
   </div>
-
   <div id="status"></div>
-  
    <script src="app.js"></script>
-
 </body>
 </html>

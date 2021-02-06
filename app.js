@@ -1,3 +1,25 @@
+/* This script displays a greeting to the user based upon the current time.
+It is an example from Javascript & jQuery book */
+
+var today = new Date();            // Create a new date object
+var hourNow = today.getHours();    // Find the current hour
+var greeting;
+
+// Display the appropriate greeting based on the current time
+if (hourNow > 18) {
+    greeting = 'Good Morning!';
+} else if (hourNow > 12) {
+    greeting = 'Good Afternoon!';
+} else if (hourNow > 0) {
+    greeting = 'Good Morning!';
+} else {
+    greeting = 'Welcome!';
+}
+document.write(greeting);
+
+
+
+
 /* javascript for Pizza Friday Survey form
    code from Formspree website.  This js code downloaded from website.
    coded to stay on page and not go to the website after submitting.

@@ -1,5 +1,27 @@
+// found this funny greeting script online
+//Time of day message script- by javascriptkit.com
+//Visit JavaScript Kit (http://javascriptkit.com) for script
+//Credit must stay intact for use
+
+var Digital=new Date()
+var hours=Digital.getHours()
+
+//Configure message below to your own.
+if (hours>=5&&hours<=11) //MESSAGE FOR MORNING
+document.write('<b>Welcome to our site. Good morning visitor.</b>')
+else if (hours==12) //MESSAGE FOR NOON
+document.write('<b>It is high noon. Thanks for dropping by!</b>')
+else if (hours>=13&&hours<=17) //MESSAGE FOR AFTERNOON
+document.write('<b>Good afternoon, and thanks for visiting.</b>')
+else if (hours>=18&&hours<=20) //MESSAGE FOR EVENING (6pm-8pm)
+document.write('<b>Good evening. Hope you\'re enjoying the gentle breeze</b>')
+else if (hours>=21&&hours<=11) //MESSAGE FOR NIGHT (9pm-11pm)
+document.write('<b>Glad to see you this time of the night.</b>')
+else //MESSAGE FOR LATE NIGHT, EARLY MORNING (12pm-4am)
+document.write('<b>Wow, thanks for choosing to visit our site over sleep!</b>')
+
 /* This script displays a greeting to the user based upon the current time.
-It is an example from Javascript & jQuery book */
+It is an example from Javascript & jQuery book
 
 var today = new Date();            // Create a new date object
 var hourNow = today.getHours();    // Find the current hour
@@ -16,7 +38,7 @@ if (hourNow > 18) {
     greeting = 'Welcome!';
 }
 document.write(greeting);
-
+*/
 
 
 
